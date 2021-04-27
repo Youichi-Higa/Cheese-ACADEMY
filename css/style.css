@@ -1,0 +1,465 @@
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body {
+  font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic,
+    "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  line-height: 1.75;
+  font-size: 16px;
+  width: 960px;
+}
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*ーーーーーーーーーーー*/
+/*hero-image
+/*ーーーーーーーーーーー*/
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: max-content;
+  color: white;
+  text-align: center;
+}
+
+.hero-image__text {
+  font-size: 48px;
+}
+
+.hero-image__title {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+/*ーーーーーーーーーーー*/
+/*header
+/*ーーーーーーーーーーー*/
+
+.header-wrapper {
+  display: flex;
+  height: 80px;
+  border-bottom: 1px solid #efefef;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item > a {
+  color: black;
+  font-size: 21px;
+  margin: 0 0 0 40px;
+}
+
+img[src$="img/header_logo.png"] {
+  width: 200px;
+}
+
+/*ーーーーーーーーーーー*/
+/*about
+/*ーーーーーーーーーーー*/
+
+.profile {
+  padding: 120px 0 64px;
+}
+
+.profile-wrapper {
+  width: 600px;
+  margin: auto;
+  font-size: 14px;
+}
+
+.profile__title_1 {
+  color: #ffd61a;
+  margin: 0 0 24px;
+  font-size: 24px;
+}
+
+.profile__title_2 {
+  margin: 0 0 64px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.profile__text_1 {
+  margin: 0 0 40px;
+}
+
+.profile__text_2 {
+  margin: 0 0 40px;
+  line-height: 2;
+}
+
+.profile__text_3 {
+  margin: 0 0 40px;
+}
+
+.profile__text_4 {
+  margin: 0 0 80px;
+  line-height: 2;
+}
+
+/*ーーーーーーーーーーー*/
+/*course
+/*ーーーーーーーーーーー*/
+
+.course__title {
+  display: block;
+  margin: 0 0 24px;
+  font-size: 24px;
+}
+
+.course__text {
+  display: block;
+  margin: 0 0 64px;
+  font-size: 16px;
+}
+
+.image__text__box {
+  display: flex;
+}
+
+.image__box {
+  width: 50%;
+}
+
+.right__text__box {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.right__text__box__wrapper {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin: 0 0 0 48px;
+}
+
+.left__text__box {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #fafafa;
+}
+
+.left__text__box__wrapper {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-content: flex-end;
+  margin: 0 48px 0 0;
+}
+
+.text__box__title {
+  font-size: 24px;
+  color: #222222;
+  margin: 0 0 40px;
+}
+
+.text__box__text {
+  font-size: 16px;
+}
+
+/*ーーーーーーーーーーー*/
+/*news
+/*ーーーーーーーーーーー*/
+
+.news {
+  padding: 64px 0 48px;
+}
+
+.wrapper {
+  max-width: 840px;
+  margin: auto;
+}
+
+.news__list {
+  display: flex;
+  font-size: 12px;
+  margin: 0 0 56px;
+}
+
+.news__item {
+  margin: 0 32px;
+}
+
+.news__heading {
+  font-weight: normal;
+  line-height: 2;
+}
+
+.news__title_1 {
+  color: #ffd61a;
+  margin: 0 0 24px;
+  font-size: 24px;
+}
+
+.news__title_2 {
+  margin: 0 0 64px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.news__eyecatch {
+  margin: 0 0 32px;
+}
+
+.news__date {
+  margin: 0 0 24px;
+}
+
+.btn {
+  display: block;
+  width: 300px;
+  height: 60px;
+  margin: auto;
+  padding: 13px 0;
+  font-size: 24px;
+  background-color: #ffd700;
+  color: #fff;
+}
+
+/*ーーーーーーーーーーー*/
+/*access
+/*ーーーーーーーーーーー*/
+
+.access {
+  background-color: #fafafa;
+}
+
+.access-wrapper {
+  width: 648px;
+  margin: auto;
+  padding: 64px 0 80px;
+}
+
+.access__title_1 {
+  margin: 0 0 24px;
+  font-size: 24px;
+}
+
+.access__title_2 {
+  margin: 0 0 64px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.googlemap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin: 0 0 40px;
+}
+
+.googlemap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.access-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.access-title {
+  width: 120px;
+  margin: 0 48px 0 0;
+}
+
+.access-text {
+  width: 480px;
+  height: 32px;
+  margin: 0 0 24px;
+}
+
+.access-mail {
+  margin: 0;
+}
+
+/*ーーーーーーーーーーー*/
+/*contact
+/*ーーーーーーーーーーー*/
+
+.contact {
+  padding: 64px 0 100px;
+}
+
+.form-wrapper {
+  width: 630px;
+  margin: auto;
+}
+
+.contact__title_1 {
+  margin: 0 0 24px;
+  font-size: 24px;
+}
+
+.contact__title_2 {
+  margin: 0 0 64px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.contact__text_1 {
+  font-size: 18px;
+}
+
+.contact__text_2 {
+  margin: 0 0 32px;
+  font-size: 18px;
+}
+
+.contact__text_3 {
+  margin: 0 0 80px;
+  font-size: 18px;
+}
+
+.form-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-title {
+  width: 120px;
+  margin: 0 120px 0 0;
+  padding: 8px 0 0;
+}
+
+.form-title.check-radio {
+  padding: 0;
+}
+
+.form-item.check-radio {
+  height: auto;
+  width: auto;
+  margin: 0 0 32px;
+}
+
+.form-item {
+  width: 328px;
+  height: 32px;
+  margin: 0 0 24px;
+}
+
+.form-mail {
+  margin: 0 0 40px;
+}
+
+.form-parts {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  border: solid 1px #bfbfbf;
+  padding: 8px;
+}
+
+.detail {
+  height: 108px;
+  margin: 0 0 40px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  width: 390px;
+  margin: 0 0 24px;
+}
+
+.label_4 {
+  margin: 0;
+}
+
+input[type*="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 24px;
+  height: 24px;
+  border: solid 1px #f0ebe5;
+  border-radius: 5px;
+  margin: 0 40px 0 0;
+}
+
+input[type*="radio"]:checked {
+  background-color: #f0ebe5;
+}
+
+.btn-submit {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  width: 298px;
+  height: 54px;
+  font-size: 18px;
+}
+
+/*ーーーーーーーーーーー*/
+/*footer
+/*ーーーーーーーーーーー*/
+
+.footer {
+  position: relative;
+  background-color: #707070;
+  padding: 32px 0;
+}
+
+.btn-pagetop {
+  position: absolute;
+  top: -60px;
+  right: 5%;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #707070;
+}
+
+.icon-up {
+  color: #707070;
+}
+
+.copyrights {
+  color: white;
+  font-size: 18px;
+}
