@@ -73,6 +73,7 @@ img {
 .header-wrapper {
   display: flex;
   height: 80px;
+  background-color: lightyellow;
   border-bottom: 1px solid #efefef;
   justify-content: space-around;
   align-items: center;
