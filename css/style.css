@@ -86,7 +86,8 @@ img {
 .nav-item > a {
   color: black;
   font-size: 21px;
-  margin: 0 0 0 60px;
+  margin: 0 30px;
+  padding: 10px 20px;
 }
 
 img[src$="img/header_logo.png"] {
@@ -517,7 +518,9 @@ input[type*="radio"]:checked {
 }
 
 .icon-up {
-  color: #707070;
+  color: white;
+  font-size: 30px;
+  margin: 5px 0 0;
 }
 
 .copyrights {

@@ -30,22 +30,52 @@
 動き自体の指定：今回は「ふわっ」
 ===================================*/
 
-.fadeUp {
+.fadeRight {
   animation-name: fadeUpAnime;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
-@keyframes fadeUpAnime {
+@keyframes fadeRightAnime {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateX(100px);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
+}
+
+.nav-list li a {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+}
+
+.nav-list li a:hover {
+  color: white;
+}
+
+.nav-list li a::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  /*線の形状*/
+  width: 80%;
+  height: 2px;
+  background: white;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  transform: scale(0, 1); /*X方向0、Y方向1*/
+  transform-origin: center top; /*上部中央基点*/
+}
+
+/*hoverの設定*/
+.nav-list li a:hover::after {
+  transform: scale(1, 1); /*X方向にスケール拡大*/
 }
 
 /* course */
