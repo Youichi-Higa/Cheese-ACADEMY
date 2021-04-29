@@ -37,23 +37,23 @@
             </div>
             <div class="hero-image-wrapper">
                 <p class="hero-image__text glowAnime">セカイを変えるチーズを作ろう</p>
-                <h1 class="hero-image__title fadeIn delay-time40">チーズ職人養成学校「チーズアカデミーFUKUOKA」</h1>
+                <h1 class="hero-image__title fadeIn delay-time35">チーズ職人養成学校「チーズアカデミーFUKUOKA」</h1>
             </div>
         </div>
 
         <!-- header -->
         <header class="header">
             <div class="header-wrapper">
-                <div class="header_box_image fadeIn delay-time40">
+                <div class="header_box_image fadeIn delay-time35">
                     <img src="img/header_logo.png" alt="">  
                 </div>
                 <nav>
                     <ul class="nav-list">
-                        <li class="nav-item delay-time50 box fadeRight"><a href="#about">ABOUT</a></li>
-                        <li class="nav-item delay-time52 box fadeRight"><a href="#course">COURSE</a></li>
-                        <li class="nav-item delay-time54 box fadeRight"><a href="#news">NEWS</a></li>
-                        <li class="nav-item delay-time56 box fadeRight"><a href="#access">ACCESS</a></li>
-                        <li class="nav-item delay-time58 box fadeRight"><a href="#contact">CONTACT</a></li>
+                        <li class="nav-item delay-time46 box fadeRight"><a href="#about">ABOUT</a></li>
+                        <li class="nav-item delay-time48 box fadeRight"><a href="#course">COURSE</a></li>
+                        <li class="nav-item delay-time50 box fadeRight"><a href="#news">NEWS</a></li>
+                        <li class="nav-item delay-time52 box fadeRight"><a href="#access">ACCESS</a></li>
+                        <li class="nav-item delay-time54 box fadeRight"><a href="#contact">CONTACT</a></li>
                     </ul>    
                 </nav>
             </div>
@@ -200,7 +200,17 @@
                     <h3 class="contact__title_2 text-center">説明会お申し込み・お問い合わせ</h3>
                     <p class="contact__text_1  text-center">ぜひ1度，足を運んでみませんか．説明会は随時開催中．</p>
                     <p class="contact__text_2  text-center">その他，お問い合わせもお気軽にどうぞ．お待ちしております．</p>
-                    <p class="contact__text_3  text-center">※チーズアカデミーは実際には存在しません．<br>間違っても問い合わせしないようお願いいたします．</br></p>             
+                    <ul class="accordion-area">              
+                        <li>
+                            <!--li ~ /li までが一つのアコーディオン-->
+                            <section>
+                                <p class="contact__text_3 text-center accordion-title">※チーズアカデミーは実際には存在しません．<br>と、言われていますが、本当でしょうか．</br></p>
+                                <div class="accordion-box">
+                                    <p class="text-center">信じるか　信じないかは<br>あなた次第です．</br></p>
+                                </div>
+                            </section>
+                        </li>
+                    </ul>               
                     <form action="#" method="POST">
                         <dl class="form-inner">
                             <dt class="form-title">名前</dt>
@@ -244,6 +254,7 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="js/fadein_trigger.js"></script><!--←本体の下に設置しないと動きません！-->
 <script src="js/glowAnime.js"></script>
+<script src="js/accordion.js"></script>
 
 </body>
 
