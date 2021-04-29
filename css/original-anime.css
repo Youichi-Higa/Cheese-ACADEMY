@@ -1,3 +1,5 @@
+/* header */
+
 /* アニメーションスタートの遅延時間を決めるCSS*/
 
 .delay-time02 {
@@ -43,5 +45,65 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* course */
+
+/*==================================================
+ふわっ
+===================================*/
+
+.fadeInLeftTrigger-1 {
+  opacity: 0;
+}
+
+.fadeInRightTrigger-2 {
+  opacity: 0;
+}
+
+.fadeInLeftTrigger-3 {
+  opacity: 0;
+}
+
+/* 左から */
+
+.fadeLeft {
+  animation-name: fadeLeftAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 右から */
+
+.fadeRight {
+  animation-name: fadeRightAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
