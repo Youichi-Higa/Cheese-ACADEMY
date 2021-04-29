@@ -1,21 +1,69 @@
+/* here-image */
+/* セカイを変えるチーズを作ろう */
+.glowAnime span {
+  opacity: 0;
+}
+
+/*アニメーションで透過を0から1に変化させtext-shadowをつける*/
+.glowAnime.glow span {
+  animation: glow_anime_on 1s ease-out forwards;
+}
+
+@keyframes glow_anime_on {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+  }
+}
+
+/* チーズ職人養成学校「チーズアカデミーFUKUOKA」 */
+/* その場からふわっと */
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.delay-time40 {
+  animation-delay: 4s;
+}
+
 /* header */
 
 /* アニメーションスタートの遅延時間を決めるCSS*/
 
-.delay-time02 {
-  animation-delay: 0.2s;
+.delay-time50 {
+  animation-delay: 5s;
 }
-
-.delay-time04 {
-  animation-delay: 0.4s;
+.delay-time52 {
+  animation-delay: 5.2s;
 }
-
-.delay-time06 {
-  animation-delay: 0.6s;
+.delay-time54 {
+  animation-delay: 5.4s;
 }
-
-.delay-time08 {
-  animation-delay: 0.8s;
+.delay-time56 {
+  animation-delay: 5.6s;
+}
+.delay-time58 {
+  animation-delay: 5.8s;
 }
 
 /*==================================================
@@ -32,7 +80,7 @@
 
 .fadeRight {
   animation-name: fadeUpAnime;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -136,4 +184,25 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+/* news */
+/* 画像の拡大 */
+
+.zoomIn img {
+  transform: scale(1);
+  transition: 0.3s ease-in-out; /*移り変わる速さを変更したい場合はこの数値を変更*/
+}
+
+.zoomIn a:hover img {
+  /*hoverした時の変化*/
+  transform: scale(1.2); /*拡大の値を変更したい場合はこの数値を変更*/
+}
+
+/* 画像のマスク */
+
+.mask {
+  display: block;
+  line-height: 0; /*行の高さを0にする*/
+  overflow: hidden; /*拡大してはみ出る要素を隠す*/
 }
